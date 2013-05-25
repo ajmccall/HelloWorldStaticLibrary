@@ -11,7 +11,7 @@
 @implementation HelloWorld
 
 + (void)printHelloWorld {
-    NSLog(@"Goodbye Cruel World");
+    NSLog(@"Hello cruel world");
 }
 
 @end
