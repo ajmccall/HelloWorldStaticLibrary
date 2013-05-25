@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D27900DF175165E700CE6831 /* HelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = D27900DE175165E700CE6831 /* HelloWorld.m */; };
 		D2C517F7174FDF72002A8834 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C517F6174FDF72002A8834 /* Foundation.framework */; };
-		D2C517FC174FDF72002A8834 /* HelloWorld.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D2C517FB174FDF72002A8834 /* HelloWorld.h */; };
-		D2C517FE174FDF72002A8834 /* HelloWorld.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C517FD174FDF72002A8834 /* HelloWorld.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,18 +18,17 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				D2C517FC174FDF72002A8834 /* HelloWorld.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D27900DD175165E700CE6831 /* HelloWorld.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorld.h; sourceTree = "<group>"; };
+		D27900DE175165E700CE6831 /* HelloWorld.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorld.m; sourceTree = "<group>"; };
 		D2C517F3174FDF72002A8834 /* libHelloWorld.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHelloWorld.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C517F6174FDF72002A8834 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D2C517FA174FDF72002A8834 /* HelloWorld-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Prefix.pch"; sourceTree = "<group>"; };
-		D2C517FB174FDF72002A8834 /* HelloWorld.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorld.h; sourceTree = "<group>"; };
-		D2C517FD174FDF72002A8834 /* HelloWorld.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorld.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +43,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D27900DC175165E700CE6831 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D27900DD175165E700CE6831 /* HelloWorld.h */,
+				D27900DE175165E700CE6831 /* HelloWorld.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		D2C517EA174FDF72002A8834 = {
 			isa = PBXGroup;
 			children = (
@@ -73,8 +80,7 @@
 		D2C517F8174FDF72002A8834 /* HelloWorld */ = {
 			isa = PBXGroup;
 			children = (
-				D2C517FB174FDF72002A8834 /* HelloWorld.h */,
-				D2C517FD174FDF72002A8834 /* HelloWorld.m */,
+				D27900DC175165E700CE6831 /* Classes */,
 				D2C517F9174FDF72002A8834 /* Supporting Files */,
 			);
 			path = HelloWorld;
@@ -139,7 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2C517FE174FDF72002A8834 /* HelloWorld.m in Sources */,
+				D27900DF175165E700CE6831 /* HelloWorld.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +248,7 @@
 				D2C51803174FDF72002A8834 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
